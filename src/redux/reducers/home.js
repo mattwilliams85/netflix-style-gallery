@@ -11,7 +11,11 @@ export default (state = initialState, action) => {
         ...state,
         movies: action.payload
       }
-
+    case type.CLEAR_MOVIES:
+      return {
+        ...state,
+        movies: []
+      }
     default:
       return state
   }
