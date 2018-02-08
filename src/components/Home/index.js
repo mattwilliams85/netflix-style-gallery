@@ -45,9 +45,9 @@ export class Home extends Component {
 
         switch (sort) {
           case 'movieName':
-            return <h2 id={ selector.replace(/ /g, '-')} className='uppercase'> { selector }</h2>
+            return <h2 id={ selector.replace(/ /g, '-')}> { selector }</h2>
           case 'languageCode':
-            return <h2 id={selector} className='uppercase'>{language[selector]}</h2>
+            return <h2 id={selector}>{language[selector]}</h2>
           default:
             return <h2 id={selector} className='uppercase'>{selector}</h2>
         }

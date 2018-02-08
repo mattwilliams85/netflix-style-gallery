@@ -20,9 +20,9 @@ const ImagePreview = ({active, onClick}) => {
           <FileImageIcon />
         </div>
         <div>
-          <div><b>Movie ID</b> - {active.movieId}</div>
-          <div> <b>Language Code</b> - {active.languageCode} </div>
-          <div> <b>Image Type</b> - {active.imageType}</div>
+          <div><b>ID</b> - {active.movieId}</div>
+          <div><b>LANG</b> - <span className='uppercase'>{active.languageCode}</span></div>
+          <div><b>TYPE</b> - <span className='uppercase'>{active.imageType}</span></div>
         </div>
       </div>
     </div>

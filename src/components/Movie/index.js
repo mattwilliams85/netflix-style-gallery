@@ -10,8 +10,8 @@ const Movie = ({ movie, sectionTitle, onClick }) => {
         <img src={movie.thumbnailUrl} alt='movie'/>
         <div className='caption'>
           <div><b>ID</b> - {movie.movieId}</div>
-          <div><b>LANG</b> - {movie.languageCode}</div>
-          <div><b>TYPE</b> - {movie.imageType}</div>
+          <div><b>LANG</b> - <span className='uppercase'>{movie.languageCode}</span></div>
+          <div><b>TYPE</b> - <span className='uppercase'>{movie.imageType}</span></div>
         </div>
       </div>
     </span>

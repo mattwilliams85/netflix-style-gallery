@@ -1,17 +1,25 @@
 # UI Engineer Take Home Exercise
 
-###Problem Statement
+### Getting Started
+
+```
+1. $ yarn install
+2. $ yarn start
+3. Open http://localhost:3000
+```
+
+### Problem Statement
 
 Netflix is investing a lot of effort into acquiring and creating beautiful artwork which is used throughout all of member experience on various devices. With a large global catalog and number of different images for a title, managing at scale is important. A non-technical operations team is responsible for acquisition and setup of artwork. Additionally, we have image algorithms that further augment the image metadata to detect actors, background tone etc.
 
 
 The operations team needs an easy-to- use user interface that would allow it to quickly manage artwork across titles and sort/group/filter on various attributes (actors, background tone, similarity group etc). As part of this exercise you are required to implement a functional application (with two distinct areas of focus) that will help solve these challenges.
 
-###About the Data
+### About the Data
 
 We’ve attached a sample JSON response like one you might see from our backend services. We’ve limited the image type to only 1 (“sdp”), but we can have many of these in reality which causes the volume of data to go up quite a bit (think 1000s) so keep that in mind. This file is attached with the email this document was sent with.
 
-###About the Webserver
+### About the Webserver
 
 We’d like you to include a web application (preferably in node.js) that does two things primarily - serves static UI assets for the browser, and serves data (from the JSON) to the UI via a REST api. Your project should have a README.md or equivalent with instructions on how to get things up and running, and have 2 end points accessible (one for the UI, and one for the REST api mentioned above).
 
