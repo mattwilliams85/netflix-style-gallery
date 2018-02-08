@@ -1,0 +1,50 @@
+{
+  "name": "create-react-app-redux",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "react-scripts": "^1.0.17"
+  },
+  "dependencies": {
+    "cross-fetch": "^1.1.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "fetch-mock": "^6.0.0",
+    "mdi-react": "^2.1.19",
+    "nock": "^9.1.6",
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.1.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-load-image": "^0.1.6",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "redux": "^3.7.2",
+    "redux-mock-store": "^1.5.1",
+    "redux-thunk": "^2.2.0",
+    "sanitize.css": "^5.0.0",
+    "scroll-to-element": "^2.0.0",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start-mockapi": "json-server server/db.json --routes server/routes.json --config server/json-server.json",
+    "start": "npm-run-all -p watch-css start-mockapi start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

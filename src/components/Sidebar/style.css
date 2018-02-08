@@ -1,0 +1,29 @@
+.sidebar {
+  width: 230px;
+  height: 100%;
+  background: #333;
+  position: fixed;
+  z-index: 1;
+  padding: 10px 25px 120px 20px;
+  line-height: 54px;
+  top: 70px;
+  left: 0;
+  box-shadow: 0 3px 2px 1px rgba(0, 0, 0, 0.9);
+  transition: transform 3s;
+  overflow-y: scroll;
+  /* optional: show position indicator in red */ }
+  .sidebar h2 {
+    line-height: 20px; }
+  .sidebar .title {
+    cursor: pointer;
+    color: #aaa;
+    transition: color .4s; }
+    .sidebar .title:hover {
+      color: #fff; }
+  .sidebar::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */ }
+  .sidebar::-webkit-scrollbar-thumb {
+    background: #FF0000; }

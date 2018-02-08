@@ -1,0 +1,31 @@
+.select-wrap {
+  position: relative; }
+
+.select {
+  border: 1px solid #fff;
+  background: #000;
+  margin: 0 0 4px 30px;
+  cursor: pointer;
+  transition: background-color .3s;
+  line-height: 35px;
+  padding: 0 50px 0 8px; }
+  .select:hover {
+    background: #222; }
+
+.select-box {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  position: absolute;
+  padding: 7px;
+  top: 38px;
+  left: 27px;
+  width: 200px;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 26px;
+  animation: fadeIn .2s; }
+  .select-box div:hover {
+    text-decoration: underline; }
+  .select-box.open {
+    display: block; }

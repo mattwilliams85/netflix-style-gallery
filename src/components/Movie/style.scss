@@ -1,0 +1,27 @@
+.movie {
+  display: inline-block;
+  margin: 0 20px 20px 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &.break {
+    display: unset;
+
+    .caption {
+      top: -67px;
+    }
+  }
+
+  img {
+    transition: .5s;
+  }
+
+  &:hover {
+    img {
+      opacity: 0.2;
+      transform: scale(1.1);
+    }
+    .caption { opacity: 1 }
+  }
+}

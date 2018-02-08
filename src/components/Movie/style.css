@@ -1,0 +1,17 @@
+.movie {
+  display: inline-block;
+  margin: 0 20px 20px 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; }
+  .movie.break {
+    display: unset; }
+    .movie.break .caption {
+      top: -67px; }
+  .movie img {
+    transition: .5s; }
+  .movie:hover img {
+    opacity: 0.2;
+    transform: scale(1.1); }
+  .movie:hover .caption {
+    opacity: 1; }
