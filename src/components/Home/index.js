@@ -38,13 +38,19 @@ export class Home extends Component {
     let prevSelector
 
     const sectionTitle = (movie, key) => {
-      const selector = movie[sort]
+      let selector = movie[sort]
 
       if (prevSelector !== selector) {
         prevSelector = selector
-        return sort === 'movieName'
-          ? <h2 id={selector.replace(/ /g, '-')}>{selector}</h2>
-          : <h2 id={selector} className='uppercase'>{language[selector]}</h2>
+
+        switch (sort) {
+          case 'movieName':
+            return <h2 id={ selector.replace(/ /g, '-')} className='uppercase'> { selector }</h2>
+          case 'languageCode':
+            return <h2 id={selector} className='uppercase'>{language[selector]}</h2>
+          default:
+            return <h2 id={selector} className='uppercase'>{selector}</h2>
+        }
       }
     }
 

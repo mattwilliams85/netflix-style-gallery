@@ -21,7 +21,10 @@ const Sidebar = ({ movies, sort }) => {
       <h2>Navigation</h2>
       {anchors.map((selector, i) => {
         return (
-          <div key={i} className='title' onClick={handleClick.bind(this, selector)}>
+          <div
+            key={i}
+            className={`${sort === 'imageType' ? 'uppercase' : ''} title`}
+            onClick={handleClick.bind(this, selector)}>
             {sort === 'languageCode' ? language[selector] : selector}
           </div>
         )

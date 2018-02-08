@@ -31,6 +31,7 @@ class Select extends Component {
         <div className={`${open ? 'open' : ''} select-box`}>
           <div onClick={onClick.bind(this, 'movieName')}>Movie Title</div>
           <div onClick={onClick.bind(this, 'languageCode')}>Language Code</div>
+          <div onClick={onClick.bind(this, 'imageType')}>Image Type</div>
         </div>
       </div>
     )
