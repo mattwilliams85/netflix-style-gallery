@@ -1,7 +1,8 @@
 .Home--root {
   padding: 4% 4% 4% calc(220px + 4%);
   background: #141414;
-  transition: transform .3s; }
+  transition: transform .3s;
+  min-height: 100vh; }
   .Home--root h2 {
     width: 0;
     white-space: nowrap;
